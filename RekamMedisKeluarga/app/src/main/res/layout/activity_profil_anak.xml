@@ -1,0 +1,594 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ta.d3ti.wisnupamungkas.rekammediskeluarga.ProfilAnakActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/com_facebook_messenger_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_marginTop="55dp"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:background="@color/material_grey_300">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/foto_anak"
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:src="@drawable/bayi"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center_horizontal" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/nik"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nomor Register"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Nomor Register"
+                    android:id="@+id/no_register"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView3" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/profil"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap"
+                    android:id="@+id/nama_anak"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView4" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView9"
+                    android:src="@drawable/profil"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jenis Kelamin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Jenis Kelamin"
+                    android:id="@+id/jk_anak"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView9" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/birthday"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Lahir"
+                    android:id="@+id/tgl_anak"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView10" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/time"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Jam Lahir"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Jam Lahir"
+                    android:id="@+id/jam_anak"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView5" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView14"
+                    android:src="@drawable/birthday"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Umur"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView14"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/umur"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView14" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" bulan"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/umur" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/berat"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Berat Badan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/berat_badan"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView6" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Kg"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/berat_badan" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left|center_horizontal">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView7"
+                    android:src="@drawable/panjang"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Panjang Badan"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView7"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/panjang"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView7" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cm"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/panjang" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView8"
+                    android:src="@drawable/lingkar"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Lingkar Kepala"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView8"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lingkar"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView8" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=" Cm"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/lingkar" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView13"
+                    android:src="@drawable/nik"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Token Periksa"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView13"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView13"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="No Token"
+                    android:id="@+id/token_no"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView13" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center"
+                android:layout_marginBottom="10dp">
+
+            <Button
+                android:id="@+id/btn_profil_anak"
+                style="?android:textAppearanceSmall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/material_deep_teal_500"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Update Profil"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:focusable="true"
+                android:layout_marginBottom="5dp" />
+
+                <Button
+                android:id="@+id/btn_foto_anak"
+                style="?android:textAppearanceSmall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light"
+                android:padding="10dp"
+                android:text="Update Foto"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                android:layout_marginBottom="5dp"
+                android:layout_toEndOf="@+id/btn_profil_anak"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp">
+
+                <Button
+                    android:id="@+id/button_qrcode"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="300dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_login"
+                    android:layout_marginStart="10dp"
+                    android:text="Lihat BarCode No Pemeriksaan"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"
+                    android:focusable="false"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    </android.support.design.widget.CoordinatorLayout>

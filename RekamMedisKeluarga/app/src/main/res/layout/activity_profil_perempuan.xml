@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/material_grey_300">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:paddingBottom="20dp">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                android:layout_below="@+id/imageView"
+                android:src="@drawable/perempuan"
+                android:id="@+id/foto_perempuan"
+                android:padding="@dimen/nav_header_vertical_spacing"
+                android:layout_gravity="center" />
+
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView3"
+                    android:src="@drawable/nik"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="NIK"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView3"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="NIK"
+                    android:id="@+id/ktp_perempuan"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView3" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView4"
+                    android:src="@drawable/profil"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Lengkap"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView4"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Nama Lengkap"
+                    android:id="@+id/nama_perempuan"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView4" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView10"
+                    android:src="@drawable/birthday"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tanggal Lahir"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView10"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Tanggal Lahir"
+                    android:id="@+id/tgl_perempuan"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView10" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView5"
+                    android:src="@drawable/telepon"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Telepon"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView5"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="No Telepon"
+                    android:id="@+id/telepon_perempuan"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView5" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView6"
+                    android:src="@drawable/home"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Alamat Rumah"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView6"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="Alamat Rumah"
+                    android:id="@+id/alamat_perempuan"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView6" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="5dp" />
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:layout_width="30dp"
+                    android:layout_height="20dp"
+                    android:id="@+id/imageView9"
+                    android:src="@drawable/nik"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="No Token Periksa"
+                    android:layout_marginLeft="10dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=":"
+                    android:layout_marginLeft="135dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView9"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:hint="No Token"
+                    android:id="@+id/no_token"
+                    android:layout_marginLeft="150dp"
+                    android:layout_centerVertical="true"
+                    android:layout_toEndOf="@+id/imageView9" />
+
+            </RelativeLayout>
+
+            <Space
+                android:layout_width="fill_parent"
+                android:layout_height="20dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center">
+
+            <Button
+                android:id="@+id/btn_profil_perempuan"
+                style="?android:textAppearanceSmall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@color/material_deep_teal_500"
+                android:padding="10dp"
+                android:layout_marginStart="10dp"
+                android:text="Update Profil"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:focusable="true" />
+
+                <Button
+                android:id="@+id/btn_foto_perempuan"
+                style="?android:textAppearanceSmall"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light"
+                android:padding="10dp"
+                android:text="Update Foto"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:layout_toEndOf="@+id/btn_profil_perempuan"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/button_qrcode"
+                    style="?android:textAppearanceSmall"
+                    android:layout_width="290dp"
+                    android:layout_height="wrap_content"
+                    android:background="@color/bg_login"
+                    android:layout_marginStart="10dp"
+                    android:text="Lihat BarCode No Pemeriksaan"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorText"
+                    android:focusable="false"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:layout_gravity="center_horizontal" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

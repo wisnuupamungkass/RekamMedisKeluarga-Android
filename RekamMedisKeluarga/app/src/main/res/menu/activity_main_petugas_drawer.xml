@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_petugas"
+            android:icon="@drawable/home"
+            android:title="Home Petugas" />
+
+        <item
+            android:id="@+id/nav_profil_petugas"
+            android:icon="@drawable/profil"
+            android:title="Profil Petugas" />
+
+        <item
+            android:id="@+id/nav_bantuan"
+            android:icon="@drawable/help"
+            android:title="Help Center" />
+    </group>
+
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/logout"
+                android:title="Log out" />
+        </menu>
+    </item>
+</menu>

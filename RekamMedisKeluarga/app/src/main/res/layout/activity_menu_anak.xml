@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ta.d3ti.wisnupamungkas.rekammediskeluarga.MenuAnakActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/com_facebook_messenger_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            android:layout_gravity="center_horizontal" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <FrameLayout
+        android:background="@color/material_grey_300"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginTop="55dp"
+        android:layout_marginBottom="20dp">
+
+        <ScrollView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingBottom="15dp"
+            android:id="@+id/scrollView3">
+
+        <LinearLayout
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:paddingTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginTop="5dp">
+            <TableLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:stretchColumns="*">
+                <TableRow
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:id="@+id/menu_profil_anak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu1"
+                        android:background="@drawable/rounded_corner_content"
+                        android:layout_margin="10dp" />
+                    <ImageButton
+                        android:id="@+id/menu_pertumbuhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu2"
+                        android:background="@drawable/rounded_corner_content"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:id="@+id/menu_medis_anak"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu3"
+                        android:background="@drawable/rounded_corner_content"
+                        android:layout_margin="10dp" />
+                    <ImageButton
+                        android:id="@+id/menu_imunisasi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu4"
+                        android:background="@drawable/rounded_corner_content"
+                        android:layout_margin="10dp" />
+                </TableRow>
+                <TableRow
+                    android:gravity="center"
+                    android:layout_weight="1">
+                    <ImageButton
+                        android:id="@+id/menu_kms"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu6"
+                        android:background="@drawable/rounded_corner_content"
+                        android:layout_margin="10dp" />
+                    <ImageButton
+                        android:id="@+id/menu_gallery"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/menu12"
+                        android:background="@drawable/rounded_corner_content"
+                        android:layout_margin="10dp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+        </ScrollView>
+    </FrameLayout>
+</android.support.design.widget.CoordinatorLayout>

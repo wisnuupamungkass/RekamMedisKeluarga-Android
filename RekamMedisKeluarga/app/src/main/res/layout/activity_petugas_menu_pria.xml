@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:background="@color/material_grey_300"
+    android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_gravity="center"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:stretchColumns="*">
+                    <TableRow
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <ImageButton
+                            android:id="@+id/profil_pria"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/menu1"
+                            android:background="@drawable/rounded_corner_content"
+                            android:layout_margin="10dp" />
+                        <ImageButton
+                            android:id="@+id/menu_rekam_medis"
+                            android:layout_width="65dp"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/menu3"
+                            android:background="@drawable/rounded_corner_content"
+                            android:layout_margin="10dp" />
+                    </TableRow>
+                    <TableRow
+                        android:gravity="center"
+                        android:layout_weight="1">
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="0dp"
+                            />
+                        <ImageButton
+                            android:layout_width="0dp"
+                            android:layout_height="0dp" />
+                    </TableRow>
+                </TableLayout>
+            </LinearLayout>
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_perempuan"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_gravity="bottom|end"
+        android:src="@drawable/back"
+        android:layout_marginRight="25dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="5dp" />
+</LinearLayout>

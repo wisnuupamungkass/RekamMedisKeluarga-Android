@@ -1,0 +1,42 @@
+<resources>
+    <string name="app_name"> Rekam Medis keluarga</string>
+    <string name="action_logout"> Log Out</string>
+    <string name="facebook_app_id">249059095559023</string>
+
+    <string name="hint_nik">Nomor Induk Kependudukan</string>
+    <string name="hint_nama">Nama Lengkap</string>
+    <string name="hint_tgl_lahir">Tanggal Lahir</string>
+    <string name="hint_hp">No Telepon</string>
+    <string name="hint_alamat">Alamat Rumah</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_klinik">Nama Klinik/Rumah Sakit</string>
+    <string name="hint_no_klinik">No Izin Praktek</string>
+    <string name="hint_token">No Token Pemeriksaan</string>
+    <string name="hint_berat">Berat Badan (Kg)</string>
+    <string name="hint_lingkar">Diameter Lingkar Kepala (Cm)</string>
+    <string name="hint_panjang">Panjang Badan (Cm)</string>
+    <string name="hint_jamlahir">Jam Lahir</string>
+
+
+    <string name="title_activity_register_petugas">Register Petugas</string>
+
+
+    <string name="title_activity_main_petugas">Home Petugas</string>
+    <string name="title_activity_main_pria">Home Pria</string>
+    <string name="title_activity_main_perempuan">Home Perempuan</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="string_choose_file">Choose File</string>
+    <string name="string_upload_image">Upload Image</string>
+    <string name="string_cancel">Batal</string>
+
+    <string name="radio_pria">Laki-Laki</string>
+    <string name="radio_perempuan">Perempuan</string>
+
+
+</resources>

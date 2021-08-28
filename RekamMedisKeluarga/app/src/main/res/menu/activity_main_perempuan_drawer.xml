@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home_perempuan"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item
+            android:id="@+id/nav_profil_perempuan"
+            android:icon="@drawable/profil"
+            android:title="Profil" />
+
+        <item
+            android:id="@+id/nav_bantuan_perempuan"
+            android:icon="@drawable/help"
+            android:title="Help Center" />
+
+        <item
+            android:id="@+id/nav_anak"
+            android:icon="@drawable/baby"
+            android:title="List Anak" />
+
+        <item
+            android:id="@+id/nav_kandungan"
+            android:icon="@drawable/pregnant"
+            android:title="Kandungan" />
+
+        <item
+            android:id="@+id/nav_rekammedis_perempuan"
+            android:icon="@drawable/rekammedisbook"
+            android:title="Rekam Medis" />
+
+        <item
+            android:id="@+id/nav_notifikasi"
+            android:icon="@drawable/notifikasi"
+            android:title="Notifikasi Imunisasi" />
+
+    </group>
+    <item android:title="">
+        <menu>
+            <item
+                android:id="@+id/nav_logout_perempuan"
+                android:icon="@drawable/logout"
+                android:title="Log out" />
+        </menu>
+    </item>
+</menu>

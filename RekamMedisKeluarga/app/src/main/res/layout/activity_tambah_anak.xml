@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.ta.d3ti.wisnupamungkas.rekammediskeluarga.TambahAnakActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/com_facebook_messenger_blue"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:layout_marginTop="60dp">
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Tambah Anak"
+        android:id="@+id/textTambahAnak"
+        android:background="@android:color/holo_red_light"
+        android:focusable="false"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView"
+        android:layout_alignParentEnd="false"
+        android:fillViewport="false"
+        android:layout_below="@+id/textTambahAnak">
+
+        <LinearLayout
+            android:id="@+id/form_tambah_anak"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="20dp"
+            android:focusableInTouchMode="false"
+            android:background="@color/primary_text_disabled_material_light">
+
+            <EditText
+                android:id="@+id/nama"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_nama"
+                android:inputType="textPersonName"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp"
+                android:maxLength="30" />
+
+            <EditText
+                android:id="@+id/tanggal_lahir"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_tgl_lahir"
+                android:inputType="date"
+                android:padding="10dp"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp" />
+
+            <!--<DatePicker
+                android:id="@+id/tanggal_lahir"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_tgl_lahir"
+                android:padding="10dp"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp" >
+            </DatePicker>-->
+
+            <RadioGroup
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGender">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_pria"
+                    android:id="@+id/radioPria"
+                    android:checked="false"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="16dp"
+                    android:layout_gravity="left" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/radio_perempuan"
+                    android:id="@+id/radioPerempuan"
+                    android:checked="false"
+                    android:textSize="16dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/radioPria"
+                    android:layout_gravity="left"
+                    android:layout_marginLeft="10dp" />
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/berat"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_berat"
+                android:inputType="numberDecimal"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp"
+                android:maxLength="12" />
+
+            <EditText
+                android:id="@+id/panjang_badan"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_panjang"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/lingkar"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint="@string/hint_lingkar"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/jam_lahir"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/white"
+                android:hint= "Jam Lahir (HH : MM : SS)"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textColor="@color/input_login"
+                android:textColorHint="@color/input_login_hint"
+                android:layout_margin="10dp"
+                android:layout_marginLeft="10dp"
+                android:inputType="time" />
+
+            <Space
+                android:layout_width="1dp"
+                android:layout_height="20dp" />
+
+
+            <Button
+                android:id="@+id/tambah_anak"
+                style="?android:textAppearanceSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/material_deep_teal_500"
+                android:padding="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Simpan"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:focusable="false" />
+
+            <Space
+                android:layout_width="20px"
+                android:layout_height="20px" />
+
+            <Button
+                android:id="@+id/button_batal"
+                style="?android:textAppearanceSmall"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/holo_orange_light"
+                android:padding="10dp"
+                android:text="Cancel"
+                android:textStyle="bold"
+                android:textColor="@color/colorText"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp" />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>
+    </android.support.design.widget.CoordinatorLayout>
